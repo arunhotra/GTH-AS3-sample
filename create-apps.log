@@ -1,0 +1,1806 @@
+2020-09-10 17:03:27,202 p=61355 u=ganti n=ansible | ansible-playbook 2.9.5
+  config file = /Users/ganti/Code/GTH/ansible.cfg
+  configured module search path = ['/Users/ganti/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.4 (default, Sep  7 2019, 18:27:02) [Clang 10.0.1 (clang-1001.0.46.4)]
+2020-09-10 17:03:27,202 p=61355 u=ganti n=ansible | Using /Users/ganti/Code/GTH/ansible.cfg as config file
+2020-09-10 17:03:27,215 p=61355 u=ganti n=ansible | host_list declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:03:27,216 p=61355 u=ganti n=ansible | script declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:03:27,216 p=61355 u=ganti n=ansible | auto declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:03:27,221 p=61355 u=ganti n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group 
+names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2020-09-10 17:03:27,221 p=61355 u=ganti n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2020-09-10 17:03:27,222 p=61355 u=ganti n=ansible | Parsed /Users/ganti/Code/GTH/inventory/dev/hosts inventory source with ini plugin
+2020-09-10 17:03:27,714 p=61355 u=ganti n=ansible | ERROR! 'role' is undefined
+2020-09-10 17:29:17,285 p=68490 u=ganti n=ansible | ansible-playbook 2.9.5
+  config file = /Users/ganti/Code/GTH/ansible.cfg
+  configured module search path = ['/Users/ganti/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.4 (default, Sep  7 2019, 18:27:02) [Clang 10.0.1 (clang-1001.0.46.4)]
+2020-09-10 17:29:17,286 p=68490 u=ganti n=ansible | Using /Users/ganti/Code/GTH/ansible.cfg as config file
+2020-09-10 17:29:17,303 p=68490 u=ganti n=ansible | host_list declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:29:17,304 p=68490 u=ganti n=ansible | script declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:29:17,304 p=68490 u=ganti n=ansible | auto declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:29:17,310 p=68490 u=ganti n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group 
+names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2020-09-10 17:29:17,310 p=68490 u=ganti n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2020-09-10 17:29:17,311 p=68490 u=ganti n=ansible | Parsed /Users/ganti/Code/GTH/inventory/dev/hosts inventory source with ini plugin
+2020-09-10 17:29:18,002 p=68490 u=ganti n=ansible | PLAYBOOK: app.yml *********************************************************************************************
+2020-09-10 17:29:18,002 p=68490 u=ganti n=ansible | 1 plays in app.yml
+2020-09-10 17:29:18,004 p=68490 u=ganti n=ansible | PLAY [Big IP App creation from CSV] ***************************************************************************
+2020-09-10 17:29:18,024 p=68490 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:29:18,033 p=68490 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 17:29:18,034 p=68490 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:4
+2020-09-10 17:29:18,034 p=68490 u=ganti n=ansible | Thursday 10 September 2020  17:29:18 -0400 (0:00:00.052)       0:00:00.052 **** 
+2020-09-10 17:29:18,216 p=68490 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml for localhost
+2020-09-10 17:29:18,234 p=68490 u=ganti n=ansible | TASK [tcp : Read users from CSV file and return a dictionary] *************************************************
+2020-09-10 17:29:18,234 p=68490 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:1
+2020-09-10 17:29:18,234 p=68490 u=ganti n=ansible | Thursday 10 September 2020  17:29:18 -0400 (0:00:00.200)       0:00:00.252 **** 
+2020-09-10 17:29:18,445 p=68499 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/read_csv.py
+2020-09-10 17:29:18,446 p=68499 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:29:18,447 p=68499 u=ganti n=ansible | <localhost> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:29:18,447 p=68499 u=ganti n=ansible | <localhost> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:29:18,714 p=68490 u=ganti n=ansible | fatal: [localhost -> localhost]: FAILED! => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "delimiter": null,
+            "dialect": "excel",
+            "fieldnames": null,
+            "key": "index",
+            "path": "tcp_app.csv",
+            "skipinitialspace": null,
+            "strict": null,
+            "unique": true
+        }
+    },
+    "msg": "Key 'index' was not found in the CSV header fields: ﻿INDEX, ENVIRONMENT, APPLICATION_NAME, APPLICATION_URL, VIP_IP, VIP_PORT, POOL_MEMBERS"
+}
+2020-09-10 17:29:43,971 p=68490 u=ganti n=ansible | User interrupted execution
+2020-09-10 17:29:45,809 p=68578 u=ganti n=ansible | ansible-playbook 2.9.5
+  config file = /Users/ganti/Code/GTH/ansible.cfg
+  configured module search path = ['/Users/ganti/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.4 (default, Sep  7 2019, 18:27:02) [Clang 10.0.1 (clang-1001.0.46.4)]
+2020-09-10 17:29:45,810 p=68578 u=ganti n=ansible | Using /Users/ganti/Code/GTH/ansible.cfg as config file
+2020-09-10 17:29:45,827 p=68578 u=ganti n=ansible | host_list declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:29:45,828 p=68578 u=ganti n=ansible | script declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:29:45,828 p=68578 u=ganti n=ansible | auto declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:29:45,836 p=68578 u=ganti n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group 
+names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2020-09-10 17:29:45,836 p=68578 u=ganti n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2020-09-10 17:29:45,837 p=68578 u=ganti n=ansible | Parsed /Users/ganti/Code/GTH/inventory/dev/hosts inventory source with ini plugin
+2020-09-10 17:29:46,515 p=68578 u=ganti n=ansible | PLAYBOOK: app.yml *********************************************************************************************
+2020-09-10 17:29:46,515 p=68578 u=ganti n=ansible | 1 plays in app.yml
+2020-09-10 17:29:46,517 p=68578 u=ganti n=ansible | PLAY [Big IP App creation from CSV] ***************************************************************************
+2020-09-10 17:29:46,533 p=68578 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:29:46,544 p=68578 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 17:29:46,544 p=68578 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:4
+2020-09-10 17:29:46,544 p=68578 u=ganti n=ansible | Thursday 10 September 2020  17:29:46 -0400 (0:00:00.065)       0:00:00.065 **** 
+2020-09-10 17:29:46,628 p=68578 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml for localhost
+2020-09-10 17:29:46,638 p=68578 u=ganti n=ansible | TASK [tcp : Read users from CSV file and return a dictionary] *************************************************
+2020-09-10 17:29:46,638 p=68578 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:1
+2020-09-10 17:29:46,638 p=68578 u=ganti n=ansible | Thursday 10 September 2020  17:29:46 -0400 (0:00:00.094)       0:00:00.159 **** 
+2020-09-10 17:29:46,911 p=68588 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/read_csv.py
+2020-09-10 17:29:46,912 p=68588 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:29:46,913 p=68588 u=ganti n=ansible | <localhost> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:29:46,914 p=68588 u=ganti n=ansible | <localhost> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:29:47,234 p=68578 u=ganti n=ansible | fatal: [localhost -> localhost]: FAILED! => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "delimiter": null,
+            "dialect": "excel",
+            "fieldnames": null,
+            "key": "INDEX",
+            "path": "tcp_app.csv",
+            "skipinitialspace": null,
+            "strict": null,
+            "unique": true
+        }
+    },
+    "msg": "Key 'INDEX' was not found in the CSV header fields: ﻿INDEX, ENVIRONMENT, APPLICATION_NAME, APPLICATION_URL, VIP_IP, VIP_PORT, POOL_MEMBERS"
+}
+2020-09-10 17:37:35,680 p=68578 u=ganti n=ansible | User interrupted execution
+2020-09-10 17:37:38,700 p=69775 u=ganti n=ansible | ansible-playbook 2.9.5
+  config file = /Users/ganti/Code/GTH/ansible.cfg
+  configured module search path = ['/Users/ganti/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.4 (default, Sep  7 2019, 18:27:02) [Clang 10.0.1 (clang-1001.0.46.4)]
+2020-09-10 17:37:38,701 p=69775 u=ganti n=ansible | Using /Users/ganti/Code/GTH/ansible.cfg as config file
+2020-09-10 17:37:38,729 p=69775 u=ganti n=ansible | host_list declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:37:38,731 p=69775 u=ganti n=ansible | script declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:37:38,732 p=69775 u=ganti n=ansible | auto declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:37:38,747 p=69775 u=ganti n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group 
+names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2020-09-10 17:37:38,760 p=69775 u=ganti n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2020-09-10 17:37:38,768 p=69775 u=ganti n=ansible | Parsed /Users/ganti/Code/GTH/inventory/dev/hosts inventory source with ini plugin
+2020-09-10 17:37:39,797 p=69775 u=ganti n=ansible | PLAYBOOK: app.yml *********************************************************************************************
+2020-09-10 17:37:39,798 p=69775 u=ganti n=ansible | 1 plays in app.yml
+2020-09-10 17:37:39,801 p=69775 u=ganti n=ansible | PLAY [Big IP App creation from CSV] ***************************************************************************
+2020-09-10 17:37:39,824 p=69775 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:37:39,839 p=69775 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 17:37:39,839 p=69775 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:4
+2020-09-10 17:37:39,840 p=69775 u=ganti n=ansible | Thursday 10 September 2020  17:37:39 -0400 (0:00:00.081)       0:00:00.081 **** 
+2020-09-10 17:37:39,961 p=69775 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml for localhost
+2020-09-10 17:37:39,978 p=69775 u=ganti n=ansible | TASK [tcp : Read users from CSV file and return a dictionary] *************************************************
+2020-09-10 17:37:39,978 p=69775 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:1
+2020-09-10 17:37:39,978 p=69775 u=ganti n=ansible | Thursday 10 September 2020  17:37:39 -0400 (0:00:00.138)       0:00:00.220 **** 
+2020-09-10 17:37:40,376 p=69789 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/read_csv.py
+2020-09-10 17:37:40,377 p=69789 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:37:40,378 p=69789 u=ganti n=ansible | <localhost> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:37:40,379 p=69789 u=ganti n=ansible | <localhost> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:37:40,847 p=69775 u=ganti n=ansible | ok: [localhost -> localhost] => {
+    "changed": false,
+    "dict": {
+        "1": {
+            "APPLICATION_NAME": "sharepoint",
+            "APPLICATION_URL": "sharepoint.example.com",
+            "ENVIRONMENT": "dev",
+            "INDEX": "1",
+            "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+            "VIP_IP": "10.10.10.10",
+            "VIP_PORT": "8080",
+            "﻿NOTES": ""
+        },
+        "2": {
+            "APPLICATION_NAME": "linkedin",
+            "APPLICATION_URL": "exchange.example.com",
+            "ENVIRONMENT": "prod",
+            "INDEX": "2",
+            "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+            "VIP_IP": "20.20.20.20",
+            "VIP_PORT": "8090",
+            "﻿NOTES": ""
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "delimiter": null,
+            "dialect": "excel",
+            "fieldnames": null,
+            "key": "INDEX",
+            "path": "tcp_app.csv",
+            "skipinitialspace": null,
+            "strict": null,
+            "unique": true
+        }
+    },
+    "list": []
+}
+2020-09-10 17:37:40,864 p=69775 u=ganti n=ansible | TASK [tcp : Printing variables after conversion from csv file] ************************************************
+2020-09-10 17:37:40,865 p=69775 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:11
+2020-09-10 17:37:40,866 p=69775 u=ganti n=ansible | Thursday 10 September 2020  17:37:40 -0400 (0:00:00.886)       0:00:01.107 **** 
+2020-09-10 17:37:40,946 p=69775 u=ganti n=ansible | ok: [localhost] => {
+    "msg": {
+        "changed": false,
+        "dict": {
+            "1": {
+                "APPLICATION_NAME": "sharepoint",
+                "APPLICATION_URL": "sharepoint.example.com",
+                "ENVIRONMENT": "dev",
+                "INDEX": "1",
+                "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+                "VIP_IP": "10.10.10.10",
+                "VIP_PORT": "8080",
+                "﻿NOTES": ""
+            },
+            "2": {
+                "APPLICATION_NAME": "linkedin",
+                "APPLICATION_URL": "exchange.example.com",
+                "ENVIRONMENT": "prod",
+                "INDEX": "2",
+                "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+                "VIP_IP": "20.20.20.20",
+                "VIP_PORT": "8090",
+                "﻿NOTES": ""
+            }
+        },
+        "failed": false,
+        "list": []
+    }
+}
+2020-09-10 17:37:40,949 p=69775 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:37:40,950 p=69775 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:37:40,953 p=69775 u=ganti n=ansible | PLAY RECAP ****************************************************************************************************
+2020-09-10 17:37:40,953 p=69775 u=ganti n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-10 17:37:40,954 p=69775 u=ganti n=ansible | Thursday 10 September 2020  17:37:40 -0400 (0:00:00.088)       0:00:01.195 **** 
+2020-09-10 17:37:40,954 p=69775 u=ganti n=ansible | =============================================================================== 
+2020-09-10 17:37:40,954 p=69775 u=ganti n=ansible | tcp --------------------------------------------------------------------- 1.11s
+2020-09-10 17:37:40,955 p=69775 u=ganti n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2020-09-10 17:37:40,955 p=69775 u=ganti n=ansible | total ------------------------------------------------------------------- 1.11s
+2020-09-10 17:37:40,955 p=69775 u=ganti n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 1 seconds
+2020-09-10 17:46:16,604 p=71127 u=ganti n=ansible | ansible-playbook 2.9.5
+  config file = /Users/ganti/Code/GTH/ansible.cfg
+  configured module search path = ['/Users/ganti/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.4 (default, Sep  7 2019, 18:27:02) [Clang 10.0.1 (clang-1001.0.46.4)]
+2020-09-10 17:46:16,605 p=71127 u=ganti n=ansible | Using /Users/ganti/Code/GTH/ansible.cfg as config file
+2020-09-10 17:46:16,623 p=71127 u=ganti n=ansible | host_list declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:46:16,624 p=71127 u=ganti n=ansible | script declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:46:16,624 p=71127 u=ganti n=ansible | auto declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:46:16,630 p=71127 u=ganti n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group 
+names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2020-09-10 17:46:16,631 p=71127 u=ganti n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2020-09-10 17:46:16,632 p=71127 u=ganti n=ansible | Parsed /Users/ganti/Code/GTH/inventory/dev/hosts inventory source with ini plugin
+2020-09-10 17:46:17,311 p=71127 u=ganti n=ansible | PLAYBOOK: app.yml *********************************************************************************************
+2020-09-10 17:46:17,311 p=71127 u=ganti n=ansible | 1 plays in app.yml
+2020-09-10 17:46:17,313 p=71127 u=ganti n=ansible | PLAY [Big IP App creation from CSV] ***************************************************************************
+2020-09-10 17:46:17,332 p=71127 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:46:17,342 p=71127 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 17:46:17,343 p=71127 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:4
+2020-09-10 17:46:17,343 p=71127 u=ganti n=ansible | Thursday 10 September 2020  17:46:17 -0400 (0:00:00.056)       0:00:00.056 **** 
+2020-09-10 17:46:17,542 p=71127 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml for localhost
+2020-09-10 17:46:17,552 p=71127 u=ganti n=ansible | TASK [tcp : Read users from CSV file and return a dictionary] *************************************************
+2020-09-10 17:46:17,552 p=71127 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:1
+2020-09-10 17:46:17,552 p=71127 u=ganti n=ansible | Thursday 10 September 2020  17:46:17 -0400 (0:00:00.209)       0:00:00.265 **** 
+2020-09-10 17:46:17,816 p=71134 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/read_csv.py
+2020-09-10 17:46:17,817 p=71134 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:46:17,818 p=71134 u=ganti n=ansible | <localhost> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:46:17,819 p=71134 u=ganti n=ansible | <localhost> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:46:18,167 p=71127 u=ganti n=ansible | ok: [localhost -> localhost] => {
+    "changed": false,
+    "dict": {
+        "1": {
+            "APPLICATION_NAME": "sharepoint",
+            "APPLICATION_URL": "sharepoint.example.com",
+            "ENVIRONMENT": "dev",
+            "INDEX": "1",
+            "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+            "VIP_IP": "10.10.10.10",
+            "VIP_PORT": "8080",
+            "﻿NOTES": ""
+        },
+        "2": {
+            "APPLICATION_NAME": "linkedin",
+            "APPLICATION_URL": "exchange.example.com",
+            "ENVIRONMENT": "prod",
+            "INDEX": "2",
+            "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+            "VIP_IP": "20.20.20.20",
+            "VIP_PORT": "8090",
+            "﻿NOTES": ""
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "delimiter": null,
+            "dialect": "excel",
+            "fieldnames": null,
+            "key": "INDEX",
+            "path": "tcp_app.csv",
+            "skipinitialspace": null,
+            "strict": null,
+            "unique": true
+        }
+    },
+    "list": []
+}
+2020-09-10 17:46:18,176 p=71127 u=ganti n=ansible | TASK [tcp : Printing variables after conversion from csv file] ************************************************
+2020-09-10 17:46:18,176 p=71127 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:11
+2020-09-10 17:46:18,176 p=71127 u=ganti n=ansible | Thursday 10 September 2020  17:46:18 -0400 (0:00:00.623)       0:00:00.889 **** 
+2020-09-10 17:46:18,215 p=71127 u=ganti n=ansible | ok: [localhost] => {
+    "msg": {
+        "changed": false,
+        "dict": {
+            "1": {
+                "APPLICATION_NAME": "sharepoint",
+                "APPLICATION_URL": "sharepoint.example.com",
+                "ENVIRONMENT": "dev",
+                "INDEX": "1",
+                "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+                "VIP_IP": "10.10.10.10",
+                "VIP_PORT": "8080",
+                "﻿NOTES": ""
+            },
+            "2": {
+                "APPLICATION_NAME": "linkedin",
+                "APPLICATION_URL": "exchange.example.com",
+                "ENVIRONMENT": "prod",
+                "INDEX": "2",
+                "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+                "VIP_IP": "20.20.20.20",
+                "VIP_PORT": "8090",
+                "﻿NOTES": ""
+            }
+        },
+        "failed": false,
+        "list": []
+    }
+}
+2020-09-10 17:46:18,221 p=71127 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 17:46:18,222 p=71127 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:8
+2020-09-10 17:46:18,222 p=71127 u=ganti n=ansible | Thursday 10 September 2020  17:46:18 -0400 (0:00:00.045)       0:00:00.934 **** 
+2020-09-10 17:46:18,285 p=71127 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 17:46:18,289 p=71127 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 17:46:18,299 p=71127 u=ganti n=ansible | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 17:46:18,299 p=71127 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:4
+2020-09-10 17:46:18,299 p=71127 u=ganti n=ansible | Thursday 10 September 2020  17:46:18 -0400 (0:00:00.077)       0:00:01.012 **** 
+2020-09-10 17:46:18,540 p=71145 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 17:46:18,542 p=71145 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:46:18,543 p=71145 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:46:18,544 p=71145 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:46:18,888 p=71127 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./files/t_sharepoint",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./files/t_sharepoint",
+            "state": "absent"
+        }
+    },
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_sharepoint",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "ganti",
+    "path": "./files/t_sharepoint",
+    "size": 64,
+    "state": "directory",
+    "uid": 1226755577
+}
+2020-09-10 17:46:18,895 p=71127 u=ganti n=ansible | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 17:46:18,896 p=71127 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:12
+2020-09-10 17:46:18,896 p=71127 u=ganti n=ansible | Thursday 10 September 2020  17:46:18 -0400 (0:00:00.596)       0:00:01.608 **** 
+2020-09-10 17:46:18,925 p=71153 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:46:18,927 p=71153 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'echo ~ganti && sleep 0'
+2020-09-10 17:46:18,958 p=71153 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599774378.9243572-75376386182660 `" && echo ansible-tmp-1599774378.9243572-75376386182660="` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599774378.9243572-75376386182660 `" ) && sleep 0'
+2020-09-10 17:46:19,019 p=71153 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /Users/ganti/.ansible/tmp/ansible-tmp-1599774378.9243572-75376386182660/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 17:46:19,059 p=71127 u=ganti n=ansible | fatal: [localhost]: FAILED! => {
+    "changed": false,
+    "msg": "AnsibleUndefinedVariable: 'dict object' has no attribute 'pool_members_ips'"
+}
+2020-09-10 17:47:19,997 p=71127 u=ganti n=ansible | User interrupted execution
+2020-09-10 17:47:21,338 p=71309 u=ganti n=ansible | ansible-playbook 2.9.5
+  config file = /Users/ganti/Code/GTH/ansible.cfg
+  configured module search path = ['/Users/ganti/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.4 (default, Sep  7 2019, 18:27:02) [Clang 10.0.1 (clang-1001.0.46.4)]
+2020-09-10 17:47:21,338 p=71309 u=ganti n=ansible | Using /Users/ganti/Code/GTH/ansible.cfg as config file
+2020-09-10 17:47:21,349 p=71309 u=ganti n=ansible | host_list declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:47:21,350 p=71309 u=ganti n=ansible | script declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:47:21,350 p=71309 u=ganti n=ansible | auto declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 17:47:21,355 p=71309 u=ganti n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group 
+names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2020-09-10 17:47:21,355 p=71309 u=ganti n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2020-09-10 17:47:21,356 p=71309 u=ganti n=ansible | Parsed /Users/ganti/Code/GTH/inventory/dev/hosts inventory source with ini plugin
+2020-09-10 17:47:21,879 p=71309 u=ganti n=ansible | PLAYBOOK: app.yml *********************************************************************************************
+2020-09-10 17:47:21,879 p=71309 u=ganti n=ansible | 1 plays in app.yml
+2020-09-10 17:47:21,880 p=71309 u=ganti n=ansible | PLAY [Big IP App creation from CSV] ***************************************************************************
+2020-09-10 17:47:21,893 p=71309 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:47:21,901 p=71309 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 17:47:21,901 p=71309 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:4
+2020-09-10 17:47:21,901 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:21 -0400 (0:00:00.039)       0:00:00.039 **** 
+2020-09-10 17:47:21,960 p=71309 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml for localhost
+2020-09-10 17:47:21,967 p=71309 u=ganti n=ansible | TASK [tcp : Read users from CSV file and return a dictionary] *************************************************
+2020-09-10 17:47:21,967 p=71309 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:1
+2020-09-10 17:47:21,967 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:21 -0400 (0:00:00.066)       0:00:00.106 **** 
+2020-09-10 17:47:22,156 p=71326 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/read_csv.py
+2020-09-10 17:47:22,156 p=71326 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:47:22,157 p=71326 u=ganti n=ansible | <localhost> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:47:22,157 p=71326 u=ganti n=ansible | <localhost> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:47:22,365 p=71309 u=ganti n=ansible | ok: [localhost -> localhost] => {
+    "changed": false,
+    "dict": {
+        "1": {
+            "APPLICATION_NAME": "sharepoint",
+            "APPLICATION_URL": "sharepoint.example.com",
+            "ENVIRONMENT": "dev",
+            "INDEX": "1",
+            "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+            "VIP_IP": "10.10.10.10",
+            "VIP_PORT": "8080",
+            "﻿NOTES": ""
+        },
+        "2": {
+            "APPLICATION_NAME": "linkedin",
+            "APPLICATION_URL": "exchange.example.com",
+            "ENVIRONMENT": "prod",
+            "INDEX": "2",
+            "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+            "VIP_IP": "20.20.20.20",
+            "VIP_PORT": "8090",
+            "﻿NOTES": ""
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "delimiter": null,
+            "dialect": "excel",
+            "fieldnames": null,
+            "key": "INDEX",
+            "path": "tcp_app.csv",
+            "skipinitialspace": null,
+            "strict": null,
+            "unique": true
+        }
+    },
+    "list": []
+}
+2020-09-10 17:47:22,371 p=71309 u=ganti n=ansible | TASK [tcp : Printing variables after conversion from csv file] ************************************************
+2020-09-10 17:47:22,372 p=71309 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:11
+2020-09-10 17:47:22,372 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:22 -0400 (0:00:00.404)       0:00:00.510 **** 
+2020-09-10 17:47:22,438 p=71309 u=ganti n=ansible | ok: [localhost] => {
+    "msg": {
+        "changed": false,
+        "dict": {
+            "1": {
+                "APPLICATION_NAME": "sharepoint",
+                "APPLICATION_URL": "sharepoint.example.com",
+                "ENVIRONMENT": "dev",
+                "INDEX": "1",
+                "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+                "VIP_IP": "10.10.10.10",
+                "VIP_PORT": "8080",
+                "﻿NOTES": ""
+            },
+            "2": {
+                "APPLICATION_NAME": "linkedin",
+                "APPLICATION_URL": "exchange.example.com",
+                "ENVIRONMENT": "prod",
+                "INDEX": "2",
+                "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+                "VIP_IP": "20.20.20.20",
+                "VIP_PORT": "8090",
+                "﻿NOTES": ""
+            }
+        },
+        "failed": false,
+        "list": []
+    }
+}
+2020-09-10 17:47:22,444 p=71309 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 17:47:22,444 p=71309 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:8
+2020-09-10 17:47:22,444 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:22 -0400 (0:00:00.072)       0:00:00.583 **** 
+2020-09-10 17:47:22,489 p=71309 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 17:47:22,492 p=71309 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 17:47:22,498 p=71309 u=ganti n=ansible | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 17:47:22,498 p=71309 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:4
+2020-09-10 17:47:22,498 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:22 -0400 (0:00:00.053)       0:00:00.637 **** 
+2020-09-10 17:47:22,658 p=71334 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 17:47:22,658 p=71334 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:47:22,659 p=71334 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:47:22,659 p=71334 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:47:22,906 p=71309 u=ganti n=ansible | ok: [localhost] => {
+    "changed": false,
+    "diff": {
+        "after": {
+            "path": "./files/t_sharepoint"
+        },
+        "before": {
+            "path": "./files/t_sharepoint"
+        }
+    },
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_sharepoint",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "ganti",
+    "path": "./files/t_sharepoint",
+    "size": 64,
+    "state": "directory",
+    "uid": 1226755577
+}
+2020-09-10 17:47:22,911 p=71309 u=ganti n=ansible | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 17:47:22,912 p=71309 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:12
+2020-09-10 17:47:22,912 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:22 -0400 (0:00:00.413)       0:00:01.050 **** 
+2020-09-10 17:47:22,933 p=71341 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:47:22,934 p=71341 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'echo ~ganti && sleep 0'
+2020-09-10 17:47:22,954 p=71341 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599774442.933036-65548994567029 `" && echo ansible-tmp-1599774442.933036-65548994567029="` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599774442.933036-65548994567029 `" ) && sleep 0'
+2020-09-10 17:47:23,128 p=71341 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2020-09-10 17:47:23,128 p=71341 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:47:23,129 p=71341 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:47:23,326 p=71341 u=ganti n=ansible | <127.0.0.1> PUT /Users/ganti/.ansible/tmp/ansible-local-71309h9yfnadx/tmpt84i3yl7/tcp.j2 TO /Users/ganti/.ansible/tmp/ansible-tmp-1599774442.933036-65548994567029/source
+2020-09-10 17:47:23,327 p=71341 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /Users/ganti/.ansible/tmp/ansible-tmp-1599774442.933036-65548994567029/ /Users/ganti/.ansible/tmp/ansible-tmp-1599774442.933036-65548994567029/source && sleep 0'
+2020-09-10 17:47:23,513 p=71341 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2020-09-10 17:47:23,514 p=71341 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:47:23,514 p=71341 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:47:23,722 p=71341 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /Users/ganti/.ansible/tmp/ansible-tmp-1599774442.933036-65548994567029/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 17:47:23,749 p=71309 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "checksum": "81411f999e63d60f05c5f5d01e2a04c9be09df6e",
+    "dest": "./files/t_sharepoint/sharepoint_as3.json",
+    "diff": [],
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tcp.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "81411f999e63d60f05c5f5d01e2a04c9be09df6e",
+            "content": null,
+            "delimiter": null,
+            "dest": "./files/t_sharepoint/sharepoint_as3.json",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599774442.933036-65548994567029/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "1c090d7d103d4a8b9a187aee11fd0bed",
+    "mode": "0644",
+    "owner": "ganti",
+    "size": 1738,
+    "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599774442.933036-65548994567029/source",
+    "state": "file",
+    "uid": 1226755577
+}
+2020-09-10 17:47:23,753 p=71309 u=ganti n=ansible | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 17:47:23,753 p=71309 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:4
+2020-09-10 17:47:23,753 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:23 -0400 (0:00:00.841)       0:00:01.892 **** 
+2020-09-10 17:47:23,778 p=71363 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 17:47:23,779 p=71363 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:47:23,780 p=71363 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:47:23,781 p=71363 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:47:24,020 p=71309 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./files/t_linkedin",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./files/t_linkedin",
+            "state": "absent"
+        }
+    },
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_linkedin",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "ganti",
+    "path": "./files/t_linkedin",
+    "size": 64,
+    "state": "directory",
+    "uid": 1226755577
+}
+2020-09-10 17:47:24,024 p=71309 u=ganti n=ansible | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 17:47:24,025 p=71309 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:12
+2020-09-10 17:47:24,025 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:24 -0400 (0:00:00.271)       0:00:02.163 **** 
+2020-09-10 17:47:24,046 p=71368 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 17:47:24,047 p=71368 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'echo ~ganti && sleep 0'
+2020-09-10 17:47:24,065 p=71368 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599774444.045527-34186002548490 `" && echo ansible-tmp-1599774444.045527-34186002548490="` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599774444.045527-34186002548490 `" ) && sleep 0'
+2020-09-10 17:47:24,107 p=71368 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2020-09-10 17:47:24,108 p=71368 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:47:24,108 p=71368 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:47:24,302 p=71368 u=ganti n=ansible | <127.0.0.1> PUT /Users/ganti/.ansible/tmp/ansible-local-71309h9yfnadx/tmp_y5cgawx/tcp.j2 TO /Users/ganti/.ansible/tmp/ansible-tmp-1599774444.045527-34186002548490/source
+2020-09-10 17:47:24,303 p=71368 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /Users/ganti/.ansible/tmp/ansible-tmp-1599774444.045527-34186002548490/ /Users/ganti/.ansible/tmp/ansible-tmp-1599774444.045527-34186002548490/source && sleep 0'
+2020-09-10 17:47:24,323 p=71368 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2020-09-10 17:47:24,324 p=71368 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 17:47:24,324 p=71368 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 17:47:24,539 p=71368 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /Users/ganti/.ansible/tmp/ansible-tmp-1599774444.045527-34186002548490/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 17:47:24,563 p=71309 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "checksum": "8bf3801320b6386a40a54ff7b21282a4b6841b63",
+    "dest": "./files/t_linkedin/linkedin_as3.json",
+    "diff": [],
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tcp.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "8bf3801320b6386a40a54ff7b21282a4b6841b63",
+            "content": null,
+            "delimiter": null,
+            "dest": "./files/t_linkedin/linkedin_as3.json",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599774444.045527-34186002548490/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "361e8d993067f5264d8ff437f950ef5c",
+    "mode": "0644",
+    "owner": "ganti",
+    "size": 1729,
+    "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599774444.045527-34186002548490/source",
+    "state": "file",
+    "uid": 1226755577
+}
+2020-09-10 17:47:24,564 p=71309 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:47:24,565 p=71309 u=ganti n=ansible | META: ran handlers
+2020-09-10 17:47:24,566 p=71309 u=ganti n=ansible | PLAY RECAP ****************************************************************************************************
+2020-09-10 17:47:24,566 p=71309 u=ganti n=ansible | localhost                  : ok=9    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-10 17:47:24,566 p=71309 u=ganti n=ansible | Thursday 10 September 2020  17:47:24 -0400 (0:00:00.541)       0:00:02.705 **** 
+2020-09-10 17:47:24,567 p=71309 u=ganti n=ansible | =============================================================================== 
+2020-09-10 17:47:24,567 p=71309 u=ganti n=ansible | tcp --------------------------------------------------------------------- 2.67s
+2020-09-10 17:47:24,567 p=71309 u=ganti n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2020-09-10 17:47:24,567 p=71309 u=ganti n=ansible | total ------------------------------------------------------------------- 2.67s
+2020-09-10 17:47:24,567 p=71309 u=ganti n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 2 seconds
+2020-09-10 18:02:28,379 p=73685 u=ganti n=ansible | ansible-playbook 2.9.5
+  config file = /Users/ganti/Code/GTH/ansible.cfg
+  configured module search path = ['/Users/ganti/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.4 (default, Sep  7 2019, 18:27:02) [Clang 10.0.1 (clang-1001.0.46.4)]
+2020-09-10 18:02:28,380 p=73685 u=ganti n=ansible | Using /Users/ganti/Code/GTH/ansible.cfg as config file
+2020-09-10 18:02:28,393 p=73685 u=ganti n=ansible | host_list declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:02:28,394 p=73685 u=ganti n=ansible | script declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:02:28,394 p=73685 u=ganti n=ansible | auto declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:02:28,399 p=73685 u=ganti n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group 
+names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2020-09-10 18:02:28,399 p=73685 u=ganti n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2020-09-10 18:02:28,400 p=73685 u=ganti n=ansible | Parsed /Users/ganti/Code/GTH/inventory/dev/hosts inventory source with ini plugin
+2020-09-10 18:02:28,880 p=73685 u=ganti n=ansible | PLAYBOOK: app.yml *********************************************************************************************
+2020-09-10 18:02:28,880 p=73685 u=ganti n=ansible | 1 plays in app.yml
+2020-09-10 18:02:28,882 p=73685 u=ganti n=ansible | PLAY [Big IP App creation from CSV] ***************************************************************************
+2020-09-10 18:02:28,896 p=73685 u=ganti n=ansible | META: ran handlers
+2020-09-10 18:02:28,903 p=73685 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 18:02:28,903 p=73685 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:4
+2020-09-10 18:02:28,903 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:28 -0400 (0:00:00.040)       0:00:00.040 **** 
+2020-09-10 18:02:29,052 p=73685 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml for localhost
+2020-09-10 18:02:29,059 p=73685 u=ganti n=ansible | TASK [tcp : Read users from CSV file and return a dictionary] *************************************************
+2020-09-10 18:02:29,059 p=73685 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:1
+2020-09-10 18:02:29,059 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:29 -0400 (0:00:00.156)       0:00:00.196 **** 
+2020-09-10 18:02:29,274 p=73690 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/read_csv.py
+2020-09-10 18:02:29,275 p=73690 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:02:29,275 p=73690 u=ganti n=ansible | <localhost> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:02:29,276 p=73690 u=ganti n=ansible | <localhost> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:02:29,493 p=73685 u=ganti n=ansible | ok: [localhost -> localhost] => {
+    "changed": false,
+    "dict": {
+        "1": {
+            "APPLICATION_NAME": "sharepoint",
+            "APPLICATION_URL": "sharepoint.example.com",
+            "ENVIRONMENT": "dev",
+            "INDEX": "1",
+            "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+            "VIP_IP": "10.10.10.10",
+            "VIP_PORT": "8080",
+            "﻿NOTES": ""
+        },
+        "2": {
+            "APPLICATION_NAME": "linkedin",
+            "APPLICATION_URL": "exchange.example.com",
+            "ENVIRONMENT": "prod",
+            "INDEX": "2",
+            "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+            "VIP_IP": "20.20.20.20",
+            "VIP_PORT": "8090",
+            "﻿NOTES": ""
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "delimiter": null,
+            "dialect": "excel",
+            "fieldnames": null,
+            "key": "INDEX",
+            "path": "tcp_app.csv",
+            "skipinitialspace": null,
+            "strict": null,
+            "unique": true
+        }
+    },
+    "list": []
+}
+2020-09-10 18:02:29,498 p=73685 u=ganti n=ansible | TASK [tcp : Printing variables after conversion from csv file] ************************************************
+2020-09-10 18:02:29,498 p=73685 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:11
+2020-09-10 18:02:29,498 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:29 -0400 (0:00:00.438)       0:00:00.635 **** 
+2020-09-10 18:02:29,525 p=73685 u=ganti n=ansible | ok: [localhost] => {
+    "msg": {
+        "changed": false,
+        "dict": {
+            "1": {
+                "APPLICATION_NAME": "sharepoint",
+                "APPLICATION_URL": "sharepoint.example.com",
+                "ENVIRONMENT": "dev",
+                "INDEX": "1",
+                "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+                "VIP_IP": "10.10.10.10",
+                "VIP_PORT": "8080",
+                "﻿NOTES": ""
+            },
+            "2": {
+                "APPLICATION_NAME": "linkedin",
+                "APPLICATION_URL": "exchange.example.com",
+                "ENVIRONMENT": "prod",
+                "INDEX": "2",
+                "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+                "VIP_IP": "20.20.20.20",
+                "VIP_PORT": "8090",
+                "﻿NOTES": ""
+            }
+        },
+        "failed": false,
+        "list": []
+    }
+}
+2020-09-10 18:02:29,529 p=73685 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 18:02:29,530 p=73685 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:8
+2020-09-10 18:02:29,530 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:29 -0400 (0:00:00.031)       0:00:00.666 **** 
+2020-09-10 18:02:29,578 p=73685 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 18:02:29,581 p=73685 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 18:02:29,587 p=73685 u=ganti n=ansible | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 18:02:29,587 p=73685 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:4
+2020-09-10 18:02:29,587 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:29 -0400 (0:00:00.057)       0:00:00.724 **** 
+2020-09-10 18:02:29,749 p=73698 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 18:02:29,750 p=73698 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:02:29,750 p=73698 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:02:29,751 p=73698 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:02:29,963 p=73685 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./files/t_sharepoint",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./files/t_sharepoint",
+            "state": "absent"
+        }
+    },
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_sharepoint",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "ganti",
+    "path": "./files/t_sharepoint",
+    "size": 64,
+    "state": "directory",
+    "uid": 1226755577
+}
+2020-09-10 18:02:29,969 p=73685 u=ganti n=ansible | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 18:02:29,969 p=73685 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:12
+2020-09-10 18:02:29,969 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:29 -0400 (0:00:00.382)       0:00:01.106 **** 
+2020-09-10 18:02:29,991 p=73707 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:02:29,991 p=73707 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'echo ~ganti && sleep 0'
+2020-09-10 18:02:30,011 p=73707 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599775349.9905658-237967285114646 `" && echo ansible-tmp-1599775349.9905658-237967285114646="` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599775349.9905658-237967285114646 `" ) && sleep 0'
+2020-09-10 18:02:30,181 p=73707 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2020-09-10 18:02:30,182 p=73707 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:02:30,183 p=73707 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:02:30,380 p=73707 u=ganti n=ansible | <127.0.0.1> PUT /Users/ganti/.ansible/tmp/ansible-local-73685w8_jb3se/tmpbo8kpi5g/tcp.j2 TO /Users/ganti/.ansible/tmp/ansible-tmp-1599775349.9905658-237967285114646/source
+2020-09-10 18:02:30,382 p=73707 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /Users/ganti/.ansible/tmp/ansible-tmp-1599775349.9905658-237967285114646/ /Users/ganti/.ansible/tmp/ansible-tmp-1599775349.9905658-237967285114646/source && sleep 0'
+2020-09-10 18:02:30,570 p=73707 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2020-09-10 18:02:30,570 p=73707 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:02:30,571 p=73707 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:02:30,778 p=73707 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /Users/ganti/.ansible/tmp/ansible-tmp-1599775349.9905658-237967285114646/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 18:02:30,805 p=73685 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "checksum": "81411f999e63d60f05c5f5d01e2a04c9be09df6e",
+    "dest": "./files/t_sharepoint/sharepoint_as3.json",
+    "diff": [],
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tcp.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "81411f999e63d60f05c5f5d01e2a04c9be09df6e",
+            "content": null,
+            "delimiter": null,
+            "dest": "./files/t_sharepoint/sharepoint_as3.json",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599775349.9905658-237967285114646/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "1c090d7d103d4a8b9a187aee11fd0bed",
+    "mode": "0644",
+    "owner": "ganti",
+    "size": 1738,
+    "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599775349.9905658-237967285114646/source",
+    "state": "file",
+    "uid": 1226755577
+}
+2020-09-10 18:02:30,810 p=73685 u=ganti n=ansible | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 18:02:30,811 p=73685 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:4
+2020-09-10 18:02:30,811 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:30 -0400 (0:00:00.841)       0:00:01.947 **** 
+2020-09-10 18:02:30,833 p=73730 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 18:02:30,834 p=73730 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:02:30,834 p=73730 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:02:30,835 p=73730 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:02:31,048 p=73685 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./files/t_linkedin",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./files/t_linkedin",
+            "state": "absent"
+        }
+    },
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_linkedin",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "ganti",
+    "path": "./files/t_linkedin",
+    "size": 64,
+    "state": "directory",
+    "uid": 1226755577
+}
+2020-09-10 18:02:31,053 p=73685 u=ganti n=ansible | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 18:02:31,053 p=73685 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:12
+2020-09-10 18:02:31,053 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:31 -0400 (0:00:00.242)       0:00:02.190 **** 
+2020-09-10 18:02:31,075 p=73734 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:02:31,076 p=73734 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'echo ~ganti && sleep 0'
+2020-09-10 18:02:31,094 p=73734 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599775351.074618-50488181428500 `" && echo ansible-tmp-1599775351.074618-50488181428500="` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599775351.074618-50488181428500 `" ) && sleep 0'
+2020-09-10 18:02:31,137 p=73734 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2020-09-10 18:02:31,138 p=73734 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:02:31,138 p=73734 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:02:31,337 p=73734 u=ganti n=ansible | <127.0.0.1> PUT /Users/ganti/.ansible/tmp/ansible-local-73685w8_jb3se/tmpn97jgmjz/tcp.j2 TO /Users/ganti/.ansible/tmp/ansible-tmp-1599775351.074618-50488181428500/source
+2020-09-10 18:02:31,338 p=73734 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /Users/ganti/.ansible/tmp/ansible-tmp-1599775351.074618-50488181428500/ /Users/ganti/.ansible/tmp/ansible-tmp-1599775351.074618-50488181428500/source && sleep 0'
+2020-09-10 18:02:31,375 p=73734 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2020-09-10 18:02:31,376 p=73734 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:02:31,377 p=73734 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:02:31,595 p=73734 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /Users/ganti/.ansible/tmp/ansible-tmp-1599775351.074618-50488181428500/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 18:02:31,620 p=73685 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "checksum": "8bf3801320b6386a40a54ff7b21282a4b6841b63",
+    "dest": "./files/t_linkedin/linkedin_as3.json",
+    "diff": [],
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tcp.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "8bf3801320b6386a40a54ff7b21282a4b6841b63",
+            "content": null,
+            "delimiter": null,
+            "dest": "./files/t_linkedin/linkedin_as3.json",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599775351.074618-50488181428500/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "361e8d993067f5264d8ff437f950ef5c",
+    "mode": "0644",
+    "owner": "ganti",
+    "size": 1729,
+    "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599775351.074618-50488181428500/source",
+    "state": "file",
+    "uid": 1226755577
+}
+2020-09-10 18:02:31,621 p=73685 u=ganti n=ansible | META: ran handlers
+2020-09-10 18:02:31,621 p=73685 u=ganti n=ansible | META: ran handlers
+2020-09-10 18:02:31,623 p=73685 u=ganti n=ansible | PLAY RECAP ****************************************************************************************************
+2020-09-10 18:02:31,623 p=73685 u=ganti n=ansible | localhost                  : ok=9    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-10 18:02:31,623 p=73685 u=ganti n=ansible | Thursday 10 September 2020  18:02:31 -0400 (0:00:00.569)       0:00:02.759 **** 
+2020-09-10 18:02:31,623 p=73685 u=ganti n=ansible | =============================================================================== 
+2020-09-10 18:02:31,623 p=73685 u=ganti n=ansible | tcp --------------------------------------------------------------------- 2.72s
+2020-09-10 18:02:31,623 p=73685 u=ganti n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2020-09-10 18:02:31,623 p=73685 u=ganti n=ansible | total ------------------------------------------------------------------- 2.72s
+2020-09-10 18:02:31,624 p=73685 u=ganti n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 2 seconds
+2020-09-10 18:11:57,539 p=75255 u=ganti n=ansible | ansible-playbook 2.9.5
+  config file = /Users/ganti/Code/GTH/ansible.cfg
+  configured module search path = ['/Users/ganti/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.7.4 (default, Sep  7 2019, 18:27:02) [Clang 10.0.1 (clang-1001.0.46.4)]
+2020-09-10 18:11:57,540 p=75255 u=ganti n=ansible | Using /Users/ganti/Code/GTH/ansible.cfg as config file
+2020-09-10 18:11:57,552 p=75255 u=ganti n=ansible | host_list declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:11:57,553 p=75255 u=ganti n=ansible | Skipping due to inventory source not existing or not being readable by the current user
+2020-09-10 18:11:57,553 p=75255 u=ganti n=ansible | script declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:11:57,553 p=75255 u=ganti n=ansible | auto declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:11:57,553 p=75255 u=ganti n=ansible | Skipping due to inventory source not existing or not being readable by the current user
+2020-09-10 18:11:57,553 p=75255 u=ganti n=ansible | yaml declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:11:57,553 p=75255 u=ganti n=ansible | Skipping due to inventory source not existing or not being readable by the current user
+2020-09-10 18:11:57,553 p=75255 u=ganti n=ansible | ini declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:11:57,554 p=75255 u=ganti n=ansible | Skipping due to inventory source not existing or not being readable by the current user
+2020-09-10 18:11:57,554 p=75255 u=ganti n=ansible | toml declined parsing /Users/ganti/Code/GTH/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 18:11:57,554 p=75255 u=ganti n=ansible | [WARNING]: Unable to parse /Users/ganti/Code/GTH/inventory/dev/hosts as an inventory source
+
+2020-09-10 18:11:57,554 p=75255 u=ganti n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-09-10 18:11:57,555 p=75255 u=ganti n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2020-09-10 18:11:57,950 p=75255 u=ganti n=ansible | PLAYBOOK: app.yml *********************************************************************************************
+2020-09-10 18:11:57,950 p=75255 u=ganti n=ansible | 1 plays in app.yml
+2020-09-10 18:11:57,952 p=75255 u=ganti n=ansible | PLAY [Big IP App creation from CSV] ***************************************************************************
+2020-09-10 18:11:57,961 p=75255 u=ganti n=ansible | META: ran handlers
+2020-09-10 18:11:57,967 p=75255 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 18:11:57,967 p=75255 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:4
+2020-09-10 18:11:57,967 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:11:57 -0400 (0:00:00.030)       0:00:00.030 **** 
+2020-09-10 18:11:58,022 p=75255 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml for localhost
+2020-09-10 18:11:58,030 p=75255 u=ganti n=ansible | TASK [tcp : Read users from CSV file and return a dictionary] *************************************************
+2020-09-10 18:11:58,030 p=75255 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:1
+2020-09-10 18:11:58,030 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:11:58 -0400 (0:00:00.062)       0:00:00.093 **** 
+2020-09-10 18:11:58,198 p=75262 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/read_csv.py
+2020-09-10 18:11:58,199 p=75262 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:11:58,199 p=75262 u=ganti n=ansible | <localhost> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:11:58,199 p=75262 u=ganti n=ansible | <localhost> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:11:58,385 p=75255 u=ganti n=ansible | ok: [localhost -> localhost] => {
+    "changed": false,
+    "dict": {
+        "1": {
+            "APPLICATION_NAME": "sharepoint",
+            "APPLICATION_URL": "sharepoint.example.com",
+            "ENVIRONMENT": "dev",
+            "INDEX": "1",
+            "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+            "VIP_IP": "10.10.10.10",
+            "VIP_PORT": "8080",
+            "﻿NOTES": ""
+        },
+        "2": {
+            "APPLICATION_NAME": "linkedin",
+            "APPLICATION_URL": "exchange.example.com",
+            "ENVIRONMENT": "prod",
+            "INDEX": "2",
+            "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+            "VIP_IP": "20.20.20.20",
+            "VIP_PORT": "8090",
+            "﻿NOTES": ""
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "delimiter": null,
+            "dialect": "excel",
+            "fieldnames": null,
+            "key": "INDEX",
+            "path": "tcp_app.csv",
+            "skipinitialspace": null,
+            "strict": null,
+            "unique": true
+        }
+    },
+    "list": []
+}
+2020-09-10 18:11:58,391 p=75255 u=ganti n=ansible | TASK [tcp : Printing variables after conversion from csv file] ************************************************
+2020-09-10 18:11:58,391 p=75255 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/csvtovars.yml:11
+2020-09-10 18:11:58,391 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:11:58 -0400 (0:00:00.360)       0:00:00.454 **** 
+2020-09-10 18:11:58,418 p=75255 u=ganti n=ansible | ok: [localhost] => {
+    "msg": {
+        "changed": false,
+        "dict": {
+            "1": {
+                "APPLICATION_NAME": "sharepoint",
+                "APPLICATION_URL": "sharepoint.example.com",
+                "ENVIRONMENT": "dev",
+                "INDEX": "1",
+                "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+                "VIP_IP": "10.10.10.10",
+                "VIP_PORT": "8080",
+                "﻿NOTES": ""
+            },
+            "2": {
+                "APPLICATION_NAME": "linkedin",
+                "APPLICATION_URL": "exchange.example.com",
+                "ENVIRONMENT": "prod",
+                "INDEX": "2",
+                "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+                "VIP_IP": "20.20.20.20",
+                "VIP_PORT": "8090",
+                "﻿NOTES": ""
+            }
+        },
+        "failed": false,
+        "list": []
+    }
+}
+2020-09-10 18:11:58,422 p=75255 u=ganti n=ansible | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 18:11:58,422 p=75255 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/main.yml:8
+2020-09-10 18:11:58,422 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:11:58 -0400 (0:00:00.031)       0:00:00.485 **** 
+2020-09-10 18:11:58,499 p=75255 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 18:11:58,501 p=75255 u=ganti n=ansible | included: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 18:11:58,507 p=75255 u=ganti n=ansible | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 18:11:58,507 p=75255 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:4
+2020-09-10 18:11:58,507 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:11:58 -0400 (0:00:00.084)       0:00:00.569 **** 
+2020-09-10 18:11:58,662 p=75270 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 18:11:58,662 p=75270 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:11:58,663 p=75270 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:11:58,664 p=75270 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:11:58,850 p=75255 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./files/t_sharepoint",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./files/t_sharepoint",
+            "state": "absent"
+        }
+    },
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_sharepoint",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "ganti",
+    "path": "./files/t_sharepoint",
+    "size": 64,
+    "state": "directory",
+    "uid": 1226755577
+}
+2020-09-10 18:11:58,856 p=75255 u=ganti n=ansible | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 18:11:58,856 p=75255 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:12
+2020-09-10 18:11:58,856 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:11:58 -0400 (0:00:00.348)       0:00:00.918 **** 
+2020-09-10 18:11:58,878 p=75274 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:11:58,879 p=75274 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'echo ~ganti && sleep 0'
+2020-09-10 18:11:58,896 p=75274 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599775918.877911-193878717717313 `" && echo ansible-tmp-1599775918.877911-193878717717313="` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599775918.877911-193878717717313 `" ) && sleep 0'
+2020-09-10 18:11:59,068 p=75274 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2020-09-10 18:11:59,068 p=75274 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:11:59,069 p=75274 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:11:59,262 p=75274 u=ganti n=ansible | <127.0.0.1> PUT /Users/ganti/.ansible/tmp/ansible-local-75255gfin5equ/tmpaf9207yp/tcp.j2 TO /Users/ganti/.ansible/tmp/ansible-tmp-1599775918.877911-193878717717313/source
+2020-09-10 18:11:59,263 p=75274 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /Users/ganti/.ansible/tmp/ansible-tmp-1599775918.877911-193878717717313/ /Users/ganti/.ansible/tmp/ansible-tmp-1599775918.877911-193878717717313/source && sleep 0'
+2020-09-10 18:11:59,462 p=75274 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2020-09-10 18:11:59,463 p=75274 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:11:59,463 p=75274 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:11:59,674 p=75274 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /Users/ganti/.ansible/tmp/ansible-tmp-1599775918.877911-193878717717313/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 18:11:59,699 p=75255 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "checksum": "951bebbb8606201a992d168dc603ecb96609610c",
+    "dest": "./files/t_sharepoint/sharepoint_as3.json",
+    "diff": [],
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tcp.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "951bebbb8606201a992d168dc603ecb96609610c",
+            "content": null,
+            "delimiter": null,
+            "dest": "./files/t_sharepoint/sharepoint_as3.json",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599775918.877911-193878717717313/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "b91b36470847c7f5117598545eb7aaf2",
+    "mode": "0644",
+    "owner": "ganti",
+    "size": 1833,
+    "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599775918.877911-193878717717313/source",
+    "state": "file",
+    "uid": 1226755577
+}
+2020-09-10 18:11:59,704 p=75255 u=ganti n=ansible | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 18:11:59,704 p=75255 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:4
+2020-09-10 18:11:59,704 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:11:59 -0400 (0:00:00.848)       0:00:01.767 **** 
+2020-09-10 18:11:59,726 p=75300 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 18:11:59,727 p=75300 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:11:59,728 p=75300 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:11:59,728 p=75300 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:11:59,906 p=75255 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./files/t_linkedin",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./files/t_linkedin",
+            "state": "absent"
+        }
+    },
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_linkedin",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "ganti",
+    "path": "./files/t_linkedin",
+    "size": 64,
+    "state": "directory",
+    "uid": 1226755577
+}
+2020-09-10 18:11:59,910 p=75255 u=ganti n=ansible | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 18:11:59,910 p=75255 u=ganti n=ansible | task path: /Users/ganti/Code/GTH/roles/tcp/tasks/createdeclarations.yml:12
+2020-09-10 18:11:59,911 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:11:59 -0400 (0:00:00.206)       0:00:01.973 **** 
+2020-09-10 18:11:59,930 p=75304 u=ganti n=ansible | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: ganti
+2020-09-10 18:11:59,931 p=75304 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'echo ~ganti && sleep 0'
+2020-09-10 18:11:59,948 p=75304 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599775919.929632-183577615922267 `" && echo ansible-tmp-1599775919.929632-183577615922267="` echo /Users/ganti/.ansible/tmp/ansible-tmp-1599775919.929632-183577615922267 `" ) && sleep 0'
+2020-09-10 18:11:59,994 p=75304 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2020-09-10 18:11:59,995 p=75304 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:11:59,995 p=75304 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:12:00,218 p=75304 u=ganti n=ansible | <127.0.0.1> PUT /Users/ganti/.ansible/tmp/ansible-local-75255gfin5equ/tmpd01mwnif/tcp.j2 TO /Users/ganti/.ansible/tmp/ansible-tmp-1599775919.929632-183577615922267/source
+2020-09-10 18:12:00,219 p=75304 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /Users/ganti/.ansible/tmp/ansible-tmp-1599775919.929632-183577615922267/ /Users/ganti/.ansible/tmp/ansible-tmp-1599775919.929632-183577615922267/source && sleep 0'
+2020-09-10 18:12:00,244 p=75304 u=ganti n=ansible | Using module file /usr/local/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2020-09-10 18:12:00,245 p=75304 u=ganti n=ansible | Pipelining is enabled.
+2020-09-10 18:12:00,246 p=75304 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c '/usr/local/opt/python/bin/python3.7 && sleep 0'
+2020-09-10 18:12:00,440 p=75304 u=ganti n=ansible | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /Users/ganti/.ansible/tmp/ansible-tmp-1599775919.929632-183577615922267/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 18:12:00,466 p=75255 u=ganti n=ansible | changed: [localhost] => {
+    "changed": true,
+    "checksum": "933b5747e5ed0f52be5edb83aa53507a7b04c985",
+    "dest": "./files/t_linkedin/linkedin_as3.json",
+    "diff": [],
+    "gid": 1437522721,
+    "group": "OLYMPUS\\Domain Users",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tcp.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "933b5747e5ed0f52be5edb83aa53507a7b04c985",
+            "content": null,
+            "delimiter": null,
+            "dest": "./files/t_linkedin/linkedin_as3.json",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599775919.929632-183577615922267/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "2d3f192db24cae85b7f674aab7485b14",
+    "mode": "0644",
+    "owner": "ganti",
+    "size": 1824,
+    "src": "/Users/ganti/.ansible/tmp/ansible-tmp-1599775919.929632-183577615922267/source",
+    "state": "file",
+    "uid": 1226755577
+}
+2020-09-10 18:12:00,468 p=75255 u=ganti n=ansible | META: ran handlers
+2020-09-10 18:12:00,468 p=75255 u=ganti n=ansible | META: ran handlers
+2020-09-10 18:12:00,469 p=75255 u=ganti n=ansible | PLAY RECAP ****************************************************************************************************
+2020-09-10 18:12:00,470 p=75255 u=ganti n=ansible | localhost                  : ok=9    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-10 18:12:00,470 p=75255 u=ganti n=ansible | Thursday 10 September 2020  18:12:00 -0400 (0:00:00.559)       0:00:02.533 **** 
+2020-09-10 18:12:00,470 p=75255 u=ganti n=ansible | =============================================================================== 
+2020-09-10 18:12:00,470 p=75255 u=ganti n=ansible | tcp --------------------------------------------------------------------- 2.50s
+2020-09-10 18:12:00,470 p=75255 u=ganti n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2020-09-10 18:12:00,470 p=75255 u=ganti n=ansible | total ------------------------------------------------------------------- 2.50s
+2020-09-10 18:12:00,471 p=75255 u=ganti n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 2 seconds
+2020-09-10 22:22:57,688 p=root u=8 | ansible-playbook 2.9.2
+  config file = /ansible/playbooks/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.7.7 (default, Jul 19 2020, 03:57:54) [GCC 8.3.0]
+2020-09-10 22:22:57,689 p=root u=8 | Using /ansible/playbooks/ansible.cfg as config file
+2020-09-10 22:22:57,744 p=root u=8 | host_list declined parsing /ansible/playbooks/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 22:22:57,745 p=root u=8 | Skipping due to inventory source not existing or not being readable by the current user
+2020-09-10 22:22:57,746 p=root u=8 | script declined parsing /ansible/playbooks/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 22:22:57,747 p=root u=8 | auto declined parsing /ansible/playbooks/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 22:22:57,748 p=root u=8 | Skipping due to inventory source not existing or not being readable by the current user
+2020-09-10 22:22:57,748 p=root u=8 | yaml declined parsing /ansible/playbooks/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 22:22:57,749 p=root u=8 | Skipping due to inventory source not existing or not being readable by the current user
+2020-09-10 22:22:57,750 p=root u=8 | ini declined parsing /ansible/playbooks/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 22:22:57,751 p=root u=8 | Skipping due to inventory source not existing or not being readable by the current user
+2020-09-10 22:22:57,752 p=root u=8 | toml declined parsing /ansible/playbooks/inventory/dev/hosts as it did not pass its verify_file() method
+2020-09-10 22:22:57,752 p=root u=8 | [WARNING]: Unable to parse /ansible/playbooks/inventory/dev/hosts as an inventory source
+
+2020-09-10 22:22:57,753 p=root u=8 | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-09-10 22:22:57,754 p=root u=8 | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2020-09-10 22:22:59,430 p=root u=8 | PLAYBOOK: app.yml *********************************************************************************************
+2020-09-10 22:22:59,432 p=root u=8 | 1 plays in app.yml
+2020-09-10 22:22:59,437 p=root u=8 | PLAY [Big IP App creation from CSV] ***************************************************************************
+2020-09-10 22:22:59,467 p=root u=8 | META: ran handlers
+2020-09-10 22:22:59,492 p=root u=8 | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 22:22:59,495 p=root u=8 | Thursday 10 September 2020  22:22:59 +0000 (0:00:00.300)       0:00:00.300 **** 
+2020-09-10 22:22:59,591 p=root u=8 | included: /ansible/playbooks/roles/tcp/tasks/csvtovars.yml for localhost
+2020-09-10 22:22:59,637 p=root u=8 | TASK [tcp : Read users from CSV file and return a dictionary] *************************************************
+2020-09-10 22:22:59,638 p=root u=8 | Thursday 10 September 2020  22:22:59 +0000 (0:00:00.142)       0:00:00.443 **** 
+2020-09-10 22:22:59,812 p=root u=15 | Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/read_csv.py
+2020-09-10 22:22:59,813 p=root u=15 | Pipelining is enabled.
+2020-09-10 22:22:59,814 p=root u=15 | <localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+2020-09-10 22:22:59,815 p=root u=15 | <localhost> EXEC /bin/sh -c '/usr/bin/python3.7 && sleep 0'
+2020-09-10 22:23:00,051 p=root u=8 | ok: [localhost -> localhost] => {
+    "changed": false,
+    "dict": {
+        "1": {
+            "APPLICATION_NAME": "sharepoint",
+            "APPLICATION_URL": "sharepoint.example.com",
+            "ENVIRONMENT": "dev",
+            "INDEX": "1",
+            "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+            "VIP_IP": "10.10.10.10",
+            "VIP_PORT": "8080",
+            "﻿NOTES": ""
+        },
+        "2": {
+            "APPLICATION_NAME": "linkedin",
+            "APPLICATION_URL": "exchange.example.com",
+            "ENVIRONMENT": "prod",
+            "INDEX": "2",
+            "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+            "VIP_IP": "20.20.20.20",
+            "VIP_PORT": "8090",
+            "﻿NOTES": ""
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "delimiter": null,
+            "dialect": "excel",
+            "fieldnames": null,
+            "key": "INDEX",
+            "path": "tcp_app.csv",
+            "skipinitialspace": null,
+            "strict": null,
+            "unique": true
+        }
+    },
+    "list": []
+}
+2020-09-10 22:23:00,062 p=root u=8 | TASK [tcp : Printing variables after conversion from csv file] ************************************************
+2020-09-10 22:23:00,064 p=root u=8 | Thursday 10 September 2020  22:23:00 +0000 (0:00:00.425)       0:00:00.869 **** 
+2020-09-10 22:23:00,087 p=root u=8 | ok: [localhost] => {
+    "msg": {
+        "changed": false,
+        "dict": {
+            "1": {
+                "APPLICATION_NAME": "sharepoint",
+                "APPLICATION_URL": "sharepoint.example.com",
+                "ENVIRONMENT": "dev",
+                "INDEX": "1",
+                "POOL_MEMBERS": "2.2.2.2:80,2.2.2.3:80",
+                "VIP_IP": "10.10.10.10",
+                "VIP_PORT": "8080",
+                "﻿NOTES": ""
+            },
+            "2": {
+                "APPLICATION_NAME": "linkedin",
+                "APPLICATION_URL": "exchange.example.com",
+                "ENVIRONMENT": "prod",
+                "INDEX": "2",
+                "POOL_MEMBERS": "1.1.1.1:80,1.1.1.2:80",
+                "VIP_IP": "20.20.20.20",
+                "VIP_PORT": "8090",
+                "﻿NOTES": ""
+            }
+        },
+        "failed": false,
+        "list": []
+    }
+}
+2020-09-10 22:23:00,098 p=root u=8 | TASK [tcp : include_tasks] ************************************************************************************
+2020-09-10 22:23:00,099 p=root u=8 | Thursday 10 September 2020  22:23:00 +0000 (0:00:00.035)       0:00:00.904 **** 
+2020-09-10 22:23:00,176 p=root u=8 | included: /ansible/playbooks/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 22:23:00,181 p=root u=8 | included: /ansible/playbooks/roles/tcp/tasks/createdeclarations.yml for localhost
+2020-09-10 22:23:00,195 p=root u=8 | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 22:23:00,196 p=root u=8 | Thursday 10 September 2020  22:23:00 +0000 (0:00:00.096)       0:00:01.001 **** 
+2020-09-10 22:23:00,407 p=root u=23 | Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 22:23:00,409 p=root u=23 | Pipelining is enabled.
+2020-09-10 22:23:00,410 p=root u=23 | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+2020-09-10 22:23:00,411 p=root u=23 | <127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3.7 && sleep 0'
+2020-09-10 22:23:00,702 p=root u=8 | changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./files/t_sharepoint",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./files/t_sharepoint",
+            "state": "absent"
+        }
+    },
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_sharepoint",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "root",
+    "path": "./files/t_sharepoint",
+    "size": 64,
+    "state": "directory",
+    "uid": 0
+}
+2020-09-10 22:23:00,716 p=root u=8 | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 22:23:00,718 p=root u=8 | Thursday 10 September 2020  22:23:00 +0000 (0:00:00.521)       0:00:01.522 **** 
+2020-09-10 22:23:00,739 p=root u=27 | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+2020-09-10 22:23:00,741 p=root u=27 | <127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+2020-09-10 22:23:00,750 p=root u=27 | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1599776580.7389092-184019556916005 `" && echo ansible-tmp-1599776580.7389092-184019556916005="` echo /root/.ansible/tmp/ansible-tmp-1599776580.7389092-184019556916005 `" ) && sleep 0'
+2020-09-10 22:23:00,965 p=root u=27 | Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2020-09-10 22:23:00,966 p=root u=27 | Pipelining is enabled.
+2020-09-10 22:23:00,967 p=root u=27 | <127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3.7 && sleep 0'
+2020-09-10 22:23:01,209 p=root u=27 | <127.0.0.1> PUT /root/.ansible/tmp/ansible-local-87czjoquy/tmpkytx721e/tcp.j2 TO /root/.ansible/tmp/ansible-tmp-1599776580.7389092-184019556916005/source
+2020-09-10 22:23:01,211 p=root u=27 | <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1599776580.7389092-184019556916005/ /root/.ansible/tmp/ansible-tmp-1599776580.7389092-184019556916005/source && sleep 0'
+2020-09-10 22:23:01,435 p=root u=27 | Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2020-09-10 22:23:01,437 p=root u=27 | Pipelining is enabled.
+2020-09-10 22:23:01,438 p=root u=27 | <127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3.7 && sleep 0'
+2020-09-10 22:23:01,731 p=root u=27 | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1599776580.7389092-184019556916005/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 22:23:01,745 p=root u=8 | changed: [localhost] => {
+    "changed": true,
+    "checksum": "951bebbb8606201a992d168dc603ecb96609610c",
+    "dest": "./files/t_sharepoint/sharepoint_as3.json",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tcp.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "951bebbb8606201a992d168dc603ecb96609610c",
+            "content": null,
+            "delimiter": null,
+            "dest": "./files/t_sharepoint/sharepoint_as3.json",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/root/.ansible/tmp/ansible-tmp-1599776580.7389092-184019556916005/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "b91b36470847c7f5117598545eb7aaf2",
+    "mode": "0644",
+    "owner": "root",
+    "size": 1833,
+    "src": "/root/.ansible/tmp/ansible-tmp-1599776580.7389092-184019556916005/source",
+    "state": "file",
+    "uid": 0
+}
+2020-09-10 22:23:01,757 p=root u=8 | TASK [tcp : Create directories per tenant for storing the declarations] ***************************************
+2020-09-10 22:23:01,758 p=root u=8 | Thursday 10 September 2020  22:23:01 +0000 (0:00:01.040)       0:00:02.563 **** 
+2020-09-10 22:23:01,784 p=root u=44 | Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/file.py
+2020-09-10 22:23:01,785 p=root u=44 | Pipelining is enabled.
+2020-09-10 22:23:01,787 p=root u=44 | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+2020-09-10 22:23:01,788 p=root u=44 | <127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3.7 && sleep 0'
+2020-09-10 22:23:02,051 p=root u=8 | changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "./files/t_linkedin",
+            "state": "directory"
+        },
+        "before": {
+            "path": "./files/t_linkedin",
+            "state": "absent"
+        }
+    },
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "./files/t_linkedin",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "root",
+    "path": "./files/t_linkedin",
+    "size": 64,
+    "state": "directory",
+    "uid": 0
+}
+2020-09-10 22:23:02,065 p=root u=8 | TASK [tcp : Build JSON payload using template for one app folder] *********************************************
+2020-09-10 22:23:02,067 p=root u=8 | Thursday 10 September 2020  22:23:02 +0000 (0:00:00.308)       0:00:02.872 **** 
+2020-09-10 22:23:02,088 p=root u=48 | <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+2020-09-10 22:23:02,089 p=root u=48 | <127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+2020-09-10 22:23:02,099 p=root u=48 | <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1599776582.0867426-28354188124199 `" && echo ansible-tmp-1599776582.0867426-28354188124199="` echo /root/.ansible/tmp/ansible-tmp-1599776582.0867426-28354188124199 `" ) && sleep 0'
+2020-09-10 22:23:02,153 p=root u=48 | Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2020-09-10 22:23:02,155 p=root u=48 | Pipelining is enabled.
+2020-09-10 22:23:02,156 p=root u=48 | <127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3.7 && sleep 0'
+2020-09-10 22:23:02,438 p=root u=48 | <127.0.0.1> PUT /root/.ansible/tmp/ansible-local-87czjoquy/tmpfz7amw3l/tcp.j2 TO /root/.ansible/tmp/ansible-tmp-1599776582.0867426-28354188124199/source
+2020-09-10 22:23:02,440 p=root u=48 | <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1599776582.0867426-28354188124199/ /root/.ansible/tmp/ansible-tmp-1599776582.0867426-28354188124199/source && sleep 0'
+2020-09-10 22:23:02,456 p=root u=48 | Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2020-09-10 22:23:02,458 p=root u=48 | Pipelining is enabled.
+2020-09-10 22:23:02,459 p=root u=48 | <127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3.7 && sleep 0'
+2020-09-10 22:23:02,799 p=root u=48 | <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1599776582.0867426-28354188124199/ > /dev/null 2>&1 && sleep 0'
+2020-09-10 22:23:02,824 p=root u=8 | changed: [localhost] => {
+    "changed": true,
+    "checksum": "933b5747e5ed0f52be5edb83aa53507a7b04c985",
+    "dest": "./files/t_linkedin/linkedin_as3.json",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "tcp.j2",
+            "attributes": null,
+            "backup": false,
+            "checksum": "933b5747e5ed0f52be5edb83aa53507a7b04c985",
+            "content": null,
+            "delimiter": null,
+            "dest": "./files/t_linkedin/linkedin_as3.json",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/root/.ansible/tmp/ansible-tmp-1599776582.0867426-28354188124199/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "2d3f192db24cae85b7f674aab7485b14",
+    "mode": "0644",
+    "owner": "root",
+    "size": 1824,
+    "src": "/root/.ansible/tmp/ansible-tmp-1599776582.0867426-28354188124199/source",
+    "state": "file",
+    "uid": 0
+}
+2020-09-10 22:23:02,832 p=root u=8 | META: ran handlers
+2020-09-10 22:23:02,838 p=root u=8 | META: ran handlers
+2020-09-10 22:23:02,847 p=root u=8 | PLAY RECAP ****************************************************************************************************
+2020-09-10 22:23:02,849 p=root u=8 | localhost                  : ok=9    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-10 22:23:02,851 p=root u=8 | Thursday 10 September 2020  22:23:02 +0000 (0:00:00.783)       0:00:03.655 **** 
+2020-09-10 22:23:02,852 p=root u=8 | =============================================================================== 
+2020-09-10 22:23:02,853 p=root u=8 | tcp --------------------------------------------------------------------- 3.36s
+2020-09-10 22:23:02,854 p=root u=8 | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2020-09-10 22:23:02,855 p=root u=8 | total ------------------------------------------------------------------- 3.36s
+2020-09-10 22:23:02,856 p=root u=8 | Playbook run took 0 days, 0 hours, 0 minutes, 3 seconds

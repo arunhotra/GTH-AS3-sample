@@ -1,0 +1,17 @@
+- name: Read users from CSV file and return a dictionary
+  read_csv:
+    path: tcp_app.csv
+    key: INDEX
+    dialect: "excel"
+  register: apps
+  delegate_to: localhost
+  tags:
+    - csv_to_dict
+  
+- name: Printing variables after conversion from csv file 
+  debug:
+    msg: "{{apps}}"
+    verbosity: '3'
+  tags:
+    - csv_to_dict
+    - debug

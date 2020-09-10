@@ -1,0 +1,25 @@
+---
+# defaults file for csv2as3
+
+validate_certs: no
+
+scripts_path: "./scripts"
+templates_path: "./templates"
+input_files_path: "./files"
+vars_file_path: "./vars"
+json_file_path: "./files/backups"
+
+
+# Var file generation parameters
+vars_script_file: "{{ scripts_path }}/csvtoyml.py"
+
+# Templates
+
+src_template_file: "{{ templates_path }}/https_app.j2"
+
+#Urls
+
+AuthUrl: mgmt/shared/authn/login
+as3Url: mgmt/shared/appsvcs/declare?async=true
+deployTaskCheckUrl: mgmt/shared/appsvcs/task
+#

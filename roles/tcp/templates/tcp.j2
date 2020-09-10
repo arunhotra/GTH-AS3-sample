@@ -1,0 +1,50 @@
+{
+     "class": "AS3",
+     "declaration": {
+         "class": "ADC",
+         "schemaVersion": "3.20.0",
+         "id": "{{item.value.ENVIRONMENT}}_{{item.value.APPLICATION_NAME}}",
+         "label": "AS3_app",
+         "remark": "Created_using_AS3",
+         "t_{{item.value.APPLICATION_NAME}}": {
+             "class": "Tenant",
+             "defaultRouteDomain": 0,
+             "{{item.value.ENVIRONMENT}}_{{item.value.APPLICATION_NAME}}_{{item.value.VIP_PORT}}": {
+                 "class": "Application",
+                 "template": "generic",
+                 "{{item.value.ENVIRONMENT}}_{{item.value.APPLICATION_NAME}}_{{item.value.VIP_PORT}}_vs": {
+                   "class": "Service_TCP",
+                   "metadata": {
+	        					"application_url": { "value" : "{{item.value.APPLICATION_URL}}" }	        					
+		                },
+                   "virtualAddresses": [
+                     "{{item.value.VIP_IP}}"
+                 ],
+                  "virtualPort": {{item.value.VIP_PORT}},
+                  "pool": "{{item.value.ENVIRONMENT}}_{{item.value.APPLICATION_NAME}}_{{item.value.VIP_PORT}}_pool"
+                 },
+                 
+                 "{{item.value.ENVIRONMENT}}_{{item.value.APPLICATION_NAME}}_{{item.value.VIP_PORT}}_pool": {
+                     "class": "Pool",
+                    "monitors": [
+                            "tcp"
+                        ],
+                     "members": [
+                      {% for member in item.value.POOL_MEMBERS.split(',') %}
+                      {
+                         "servicePort": {{member.split(':')[1]}},
+                         "serverAddresses": [
+                              "{{member.split(':')[0]}}"
+                         ],
+                         "adminState": "enable"
+                      }
+                      {% if not loop.last %}
+                        ,
+                      {% endif %}
+                      {% endfor %}
+                    ]
+                 }
+            }
+         }
+     }
+ }

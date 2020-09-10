@@ -1,0 +1,13 @@
+---
+
+
+- include_tasks: csvtovars.yml
+  tags:
+    - csv_to_dict
+
+- include_tasks: createdeclarations.yml
+  with_dict: "{{ apps.dict }}"
+  tags:
+    - create_declarations
+
+

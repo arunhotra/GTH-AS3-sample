@@ -1,0 +1,14 @@
+---
+- name: Big IP App creation from CSV
+  hosts: localhost
+  gather_facts: no
+
+  # collections:
+  # - f5networks.f5_module
+
+
+  roles:
+    - "{{ role }}"
+
+
+

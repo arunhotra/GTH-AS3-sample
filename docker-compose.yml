@@ -1,0 +1,9 @@
+version: "3"
+services:
+  csvas3:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+    volumes:
+      - .:/ansible/playbooks

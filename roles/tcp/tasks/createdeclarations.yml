@@ -1,0 +1,19 @@
+ 
+
+
+- name: Create directories per tenant for storing the declarations
+  file: 
+    path: "{{input_files_path}}/t_{{item.value.APPLICATION_NAME}}"
+    state: directory
+  tags:
+    - create_declarations
+
+
+- name: Build JSON payload using template for one app folder
+  template: 
+    src: "tcp.j2" 
+    dest: "{{input_files_path}}/t_{{item.value.APPLICATION_NAME}}/{{item.value.APPLICATION_NAME}}_as3.json"
+  tags:
+    - create_declarations
+
+
