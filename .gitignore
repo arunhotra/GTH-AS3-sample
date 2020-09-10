@@ -2,3 +2,5 @@
 notes
 inventory
 files
+*.log
+
