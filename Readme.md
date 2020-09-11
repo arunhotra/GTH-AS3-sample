@@ -14,7 +14,7 @@ Docker
 * ### clone the repo
 
 ```
-git@github.com:arunhotra/GTH-AS3-sample.git
+git clone git@github.com:arunhotra/GTH-AS3-sample.git
 
 ```
 
